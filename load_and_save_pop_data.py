@@ -56,6 +56,8 @@ for country_text in each_country[1:-2]:
     countries_pop_dict[curr_country][2005] = int(pop2005)
     countries_pop_dict[curr_country][2010] = int(pop2010)
     countries_pop_dict[curr_country][2015] = int(pop2015)
+    #if curr_country == "China":
+    #    print pop2015
 
 # get the 1985 to 2015 data
 start = "<th>2020</th>"

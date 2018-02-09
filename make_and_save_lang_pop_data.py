@@ -2,6 +2,8 @@ import pickle
 
 countries_pop_dict = pickle.load(open("countries_pop_dict.p","rb"))
 countries_lang_dict = pickle.load(open("country_lang_dict.p","rb"))
+print countries_pop_dict["China"]
+print countries_lang_dict["China"]
 
 # make language to population/year dict
 lang_pop_dict = {} # will have array for each language index 0 is 1950, and every consec index is 5 more years
