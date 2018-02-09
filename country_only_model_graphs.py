@@ -8,12 +8,14 @@ def graph_english_chinese_1950_to_2050(lang_pop_dict):
     chinese_speakers = [sum(x) for x in zip(lang_pop_dict["Chinese"],lang_pop_dict["Mandarin"])]
     print english_speakers
     print chinese_speakers
-    
-    plt.figure()
-    plt.title("Chinese and English Speakers")
-    plt.plot(english_speakers,"b")
-    plt.plot(chinese_speakers,"r")
-    
+
+    fig, ax = plt.subplots()
+    ax.set_title("Chinese and English Speakers")
+    ax.plot(xrange(1950,2055,5),english_speakers,"b")
+    ax.plot(xrange(1950,2055,5),chinese_speakers,"r")
+    ax.set_xlim(1950,2050)
+    ax.set_ylabel("Speakers in Thousands")
+    ax.set_xlabel("Year")
     plt.show()
 
 
