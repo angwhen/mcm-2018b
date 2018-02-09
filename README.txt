@@ -6,7 +6,7 @@ Instructions for Single Language Country Only Model
 
 Instructions for Correlating Country to Speakers
 1. run load_and_save_native_speakers.py to get dict of language to 2007 estimates of total speakers (will need native_speakers.ods from angel) - data in millions
-
+2. not finished
 
 Libraries you may need to install:
 1. matplotlib
