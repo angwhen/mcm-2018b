@@ -68,6 +68,7 @@ indices = range(0,2*len(lang_pop_list),2)
 width = np.min(np.diff(indices))/3.0
 
 fig = plt.figure()
+plt.title("Country Interpolated Predictions vs Native Speakers Data (2010, 2007)")
 ax = fig.add_subplot(111)
 p1 = ax.bar(indices-width,lang_pop_list,width,color='b',label='-Ymin')
 p2 = ax.bar(indices,native_speakers_list,width,color='r',label='Ymax')

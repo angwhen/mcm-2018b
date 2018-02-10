@@ -6,7 +6,7 @@ Instructions for Single Language Country Only Model
 
 Instructions for Correlating Country to Speakers
 1. run load_and_save_native_speakers.py to get dict of language to 2007 estimates of total speakers (will need native_speakers.ods from angel) - data in millions
-2. not finished
+2. run correlate_native_speakers_country_pop.py to get a graph comparing the estimates gotten from interpolating #of speakers from population of country (2010), and the native speakers (2007) data from wikipedia. also hope to do some statistics thing to see how strong the relationship/prediction factor is.
 
 Libraries you may need to install:
 1. matplotlib
