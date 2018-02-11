@@ -6,7 +6,7 @@ data = get_data("all_speakers.ods")["Sheet1"]
 print "loaded"
 
 all_speakers_dict = {} #dict of lists with two indices [l1,l2], in millions
-for language in data[1:]:
+for language in data:
     language_name = str(language[0].split(" ")[0]).strip()
     l1_speakers = language[1]
     l2_speakers = language[2]
