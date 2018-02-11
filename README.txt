@@ -12,7 +12,7 @@ Instructions for Correlating Country to L1 and L2 Speakers
 1.run load_and_save_all_speakers.py to get dict of language to l1 and l2 estimates from wikipedia (will need all_speakers.ods from angel) - data in millions
 2. run correlate_all_speakers_country_pop.py to:
    a. get graphs comparing country interpolation (2010) with actual l1 and l2 data
-   b. save l1 dict with estimates for all years based on ratio of l1 to country guess, and save l2 dict with same estimates
+   b. save language_l12_prop_dict with every index as language, and every value a [l1_prop, l2_prop] based on country est to wikipedia data
    
 
 Libraries you may need to install:
