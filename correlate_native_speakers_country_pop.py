@@ -77,7 +77,14 @@ plt.legend((p1[0], p2[0]), ('Country Interpolation', 'Native Speakers Data'))
 plt.xticks(indices, language_names_list,rotation=45)
 plt.show()
 
+# save dict of proportions
+print language_names_list
+language_native_prop_dict = {}
+for i in xrange(0,len(language_names_list)):
+    language_native_prop_dict[language_names_list[i]] = float(native_speakers_list[i])/float(lang_pop_list[i])
 
+print language_native_prop_dict
+pickle.dump(language_native_prop_dict,open("language_native_prop_dict.p","wb"))
 
 
 
